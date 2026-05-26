@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
     private void CalculateTargetMovement()
     {
         _moveInput = moveAction.action.ReadValue<Vector2>();
-        Vector3 inputMovement = new Vector3(_moveInput.x, 0, _moveInput.y) * 6.0f;
+        Vector3 inputMovement = new Vector3(_moveInput.x, 0, _moveInput.y) * 5.0f;
 
         Vector3 cameraLookForwardVector = ProjectVectorOntoGroundPlane(cameraTarget.forward);
         Quaternion cameraLookForward = Quaternion.LookRotation(cameraLookForwardVector);
