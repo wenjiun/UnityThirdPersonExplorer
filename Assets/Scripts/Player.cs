@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
 
         if (_jumpThisFrame)
         {
-            velocity.y = 6.0f;
+            velocity.y = 5.0f;
 
             _jumping = true;
             _jumpThisFrame = false;
